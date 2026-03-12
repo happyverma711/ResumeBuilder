@@ -2,6 +2,7 @@ import React, { useContext, useEffect, useState } from 'react'
 import './userCollectData.css'
 import { IoMdCloudUpload } from 'react-icons/io'
 import ResumeContext from '../../Context/ResumeContext'
+import ProfilePic from '../../Assets/ProfilePic.png'
 
 const UserDataCollect = () => {
 
@@ -16,7 +17,7 @@ const UserDataCollect = () => {
     const [projectData, setProjectData] = useState({ 'projectTitles': { pTitle1: "Project Title " }, 'projectDesc': { pDescription1: "Project Description are Shown here , with Bullet Points" } })
     const [educationData, setEducationData] = useState({ 'educationTitles': { eTitle1: "Education Title" }, 'educationDesc': { eDescription1: "Education Description are Shown here , with Bullet Points" } })
     const [workData, setWorkData] = useState({ 'workTitles': { wTitle1: "Work Title" }, 'workDesc': { wDescription1: "Work Description are Shown here , with Bullet Points" } })
-    const [personalData, setPersonalData] = useState({ profileImage: './public/ProfilePic.png', name: "Your Name", summary: 'Lorem ipsum dolor sit amet, consectetur adipiscing eli', profile: "Work Profile", address: "Address Line", phone: "Phone Number", email: "Email Address", skill: 'Your, Skills, are, shown, here', })
+    const [personalData, setPersonalData] = useState({ profileImage: ProfilePic, name: "Your Name", summary: 'Lorem ipsum dolor sit amet, consectetur adipiscing eli', profile: "Work Profile", address: "Address Line", phone: "Phone Number", email: "Email Address", skill: 'Your, Skills, are, shown, here', })
     const [awardData, setAwardData] = useState({ awards: 'Your Awards are shown here' })
 
     const handleChangePersonal = (e) => {
